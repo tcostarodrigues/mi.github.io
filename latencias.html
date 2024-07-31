@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc04554cb676858192b70424519a919d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dc04554cb676858192b70424519a919d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dc04554cb676858192b70424519a919d = L.map(
+                "map_dc04554cb676858192b70424519a919d",
+                {
+                    center: [-15.7942, -47.8822],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6feff585a9da05f100b83498b08a2dd6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6feff585a9da05f100b83498b08a2dd6.addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var marker_91a4263c8542fb766918f8343650fa76 = L.marker(
+                [-34.6073387, -58.4432852],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_1cdeb7d5158851e2b0fdef927031b946 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91a4263c8542fb766918f8343650fa76.setIcon(icon_1cdeb7d5158851e2b0fdef927031b946);
+        
+    
+        var popup_7d3f239721a06b6c598fce48fb8ea313 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada401e1b94d07206e9b0e231437b847 = $(`<div id="html_ada401e1b94d07206e9b0e231437b847" style="width: 100.0%; height: 100.0%;">Argentina</div>`)[0];
+                popup_7d3f239721a06b6c598fce48fb8ea313.setContent(html_ada401e1b94d07206e9b0e231437b847);
+            
+        
+
+        marker_91a4263c8542fb766918f8343650fa76.bindPopup(popup_7d3f239721a06b6c598fce48fb8ea313)
+        ;
+
+        
+    
+    
+            var marker_25b3bbbcd24f1939f10a3b4d3e7c0cde = L.marker(
+                [-33.4377756, -70.6504502],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_64275c916180c68b729ca9d1b7f48711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25b3bbbcd24f1939f10a3b4d3e7c0cde.setIcon(icon_64275c916180c68b729ca9d1b7f48711);
+        
+    
+        var popup_0d5c6296d0176170facbc8d9e59ce7a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27a6b9fbc360354d2173ad4ce19bd91c = $(`<div id="html_27a6b9fbc360354d2173ad4ce19bd91c" style="width: 100.0%; height: 100.0%;">Chile</div>`)[0];
+                popup_0d5c6296d0176170facbc8d9e59ce7a8.setContent(html_27a6b9fbc360354d2173ad4ce19bd91c);
+            
+        
+
+        marker_25b3bbbcd24f1939f10a3b4d3e7c0cde.bindPopup(popup_0d5c6296d0176170facbc8d9e59ce7a8)
+        ;
+
+        
+    
+    
+            var poly_line_742a58ac6302618935b030b8797749ae = L.polyline(
+                [[-34.6073387, -58.4432852], [-33.4377756, -70.6504502]],
+                {"bubblingMouseEvents": true, "color": "#6f8ac5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#6f8ac5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_742a58ac6302618935b030b8797749ae.bindTooltip(
+                `<div>
+                     Argentina para Chile: 36 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62018bbd38986b7f27e39a6afff9380f = L.marker(
+                [-25.2800459, -57.6343814],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_746c2ef35833127a2df0d01243664398 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62018bbd38986b7f27e39a6afff9380f.setIcon(icon_746c2ef35833127a2df0d01243664398);
+        
+    
+        var popup_82dbde43a5b9572f1f5164c4dc0dc853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_893ed46b97f1f2d26a52455cd427d02d = $(`<div id="html_893ed46b97f1f2d26a52455cd427d02d" style="width: 100.0%; height: 100.0%;">Paraguai</div>`)[0];
+                popup_82dbde43a5b9572f1f5164c4dc0dc853.setContent(html_893ed46b97f1f2d26a52455cd427d02d);
+            
+        
+
+        marker_62018bbd38986b7f27e39a6afff9380f.bindPopup(popup_82dbde43a5b9572f1f5164c4dc0dc853)
+        ;
+
+        
+    
+    
+            var marker_d81ef7e236b684315f389934db33e3b1 = L.marker(
+                [-33.4377756, -70.6504502],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_6bc9ace75f90737857463419b01f0f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d81ef7e236b684315f389934db33e3b1.setIcon(icon_6bc9ace75f90737857463419b01f0f60);
+        
+    
+        var popup_e864af0a0f741d2550465ee6b6738755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_804503da7d9daab04259e3543948c131 = $(`<div id="html_804503da7d9daab04259e3543948c131" style="width: 100.0%; height: 100.0%;">Chile</div>`)[0];
+                popup_e864af0a0f741d2550465ee6b6738755.setContent(html_804503da7d9daab04259e3543948c131);
+            
+        
+
+        marker_d81ef7e236b684315f389934db33e3b1.bindPopup(popup_e864af0a0f741d2550465ee6b6738755)
+        ;
+
+        
+    
+    
+            var poly_line_b5a33baf4931a0e2cd024b5ad9f331cb = L.polyline(
+                [[-25.2800459, -57.6343814], [-33.4377756, -70.6504502]],
+                {"bubblingMouseEvents": true, "color": "#7d9ccd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7d9ccd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_b5a33baf4931a0e2cd024b5ad9f331cb.bindTooltip(
+                `<div>
+                     Paraguai para Chile: 28 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4677d14271fc4403f81364ed676735da = L.marker(
+                [-12.0621065, -77.0365256],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_e37e2f34f22546f5559f13a8156a08af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4677d14271fc4403f81364ed676735da.setIcon(icon_e37e2f34f22546f5559f13a8156a08af);
+        
+    
+        var popup_3cb0b24d812fb455ed7a829a1419afb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d73ae72ab6f8358f36d545e550c9b641 = $(`<div id="html_d73ae72ab6f8358f36d545e550c9b641" style="width: 100.0%; height: 100.0%;">Peru</div>`)[0];
+                popup_3cb0b24d812fb455ed7a829a1419afb7.setContent(html_d73ae72ab6f8358f36d545e550c9b641);
+            
+        
+
+        marker_4677d14271fc4403f81364ed676735da.bindPopup(popup_3cb0b24d812fb455ed7a829a1419afb7)
+        ;
+
+        
+    
+    
+            var marker_36e666ea1136afeb08c5c49faa6c28db = L.marker(
+                [-33.4377756, -70.6504502],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_b2f8d8bada635f82a2681b1bea5e690d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36e666ea1136afeb08c5c49faa6c28db.setIcon(icon_b2f8d8bada635f82a2681b1bea5e690d);
+        
+    
+        var popup_abe53776ea05c624ab8651b1b7115dbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b300348ee106de4f34eebd80efdfcd27 = $(`<div id="html_b300348ee106de4f34eebd80efdfcd27" style="width: 100.0%; height: 100.0%;">Chile</div>`)[0];
+                popup_abe53776ea05c624ab8651b1b7115dbd.setContent(html_b300348ee106de4f34eebd80efdfcd27);
+            
+        
+
+        marker_36e666ea1136afeb08c5c49faa6c28db.bindPopup(popup_abe53776ea05c624ab8651b1b7115dbd)
+        ;
+
+        
+    
+    
+            var poly_line_0f4aa567478f37c10f73f501c956fc16 = L.polyline(
+                [[-12.0621065, -77.0365256], [-33.4377756, -70.6504502]],
+                {"bubblingMouseEvents": true, "color": "#7693c9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7693c9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_0f4aa567478f37c10f73f501c956fc16.bindTooltip(
+                `<div>
+                     Peru para Chile: 32 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0fe9e3c6cf1a88e7d2dad67a505fa6c = L.marker(
+                [-16.4955455, -68.1336229],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_ae3e6f51dad67b5bd2bf084623bb81d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0fe9e3c6cf1a88e7d2dad67a505fa6c.setIcon(icon_ae3e6f51dad67b5bd2bf084623bb81d2);
+        
+    
+        var popup_b163e0009eb7cf66c1297616251b9ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90c12f07c3dbda005ef8b4abc60db078 = $(`<div id="html_90c12f07c3dbda005ef8b4abc60db078" style="width: 100.0%; height: 100.0%;">Bolivia</div>`)[0];
+                popup_b163e0009eb7cf66c1297616251b9ea4.setContent(html_90c12f07c3dbda005ef8b4abc60db078);
+            
+        
+
+        marker_a0fe9e3c6cf1a88e7d2dad67a505fa6c.bindPopup(popup_b163e0009eb7cf66c1297616251b9ea4)
+        ;
+
+        
+    
+    
+            var marker_84136bf3c001a7f2b3d41146e16471fb = L.marker(
+                [-33.4377756, -70.6504502],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_e0a885d33126156af46d0a8dad321721 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84136bf3c001a7f2b3d41146e16471fb.setIcon(icon_e0a885d33126156af46d0a8dad321721);
+        
+    
+        var popup_0ebd4aa7fb3f090e1dceaa99eec907d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c77802dc2f2859ddcfdd1df7a81c24 = $(`<div id="html_26c77802dc2f2859ddcfdd1df7a81c24" style="width: 100.0%; height: 100.0%;">Chile</div>`)[0];
+                popup_0ebd4aa7fb3f090e1dceaa99eec907d9.setContent(html_26c77802dc2f2859ddcfdd1df7a81c24);
+            
+        
+
+        marker_84136bf3c001a7f2b3d41146e16471fb.bindPopup(popup_0ebd4aa7fb3f090e1dceaa99eec907d9)
+        ;
+
+        
+    
+    
+            var poly_line_99ae322ff7e3d75ad2e714cf84249955 = L.polyline(
+                [[-16.4955455, -68.1336229], [-33.4377756, -70.6504502]],
+                {"bubblingMouseEvents": true, "color": "#7998cb", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7998cb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_99ae322ff7e3d75ad2e714cf84249955.bindTooltip(
+                `<div>
+                     Bolivia para Chile: 30 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95d226ee2920875f37d29326fc204a1a = L.marker(
+                [4.6533816, -74.0836333],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_8ad1fe8ec67e8124ed426ffe5bd00394 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95d226ee2920875f37d29326fc204a1a.setIcon(icon_8ad1fe8ec67e8124ed426ffe5bd00394);
+        
+    
+        var popup_3887fcb042b062d9ec4c8a19bd706ed8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_801ce3693dc4300cd7e1e2f28c1d2c81 = $(`<div id="html_801ce3693dc4300cd7e1e2f28c1d2c81" style="width: 100.0%; height: 100.0%;">Colombia</div>`)[0];
+                popup_3887fcb042b062d9ec4c8a19bd706ed8.setContent(html_801ce3693dc4300cd7e1e2f28c1d2c81);
+            
+        
+
+        marker_95d226ee2920875f37d29326fc204a1a.bindPopup(popup_3887fcb042b062d9ec4c8a19bd706ed8)
+        ;
+
+        
+    
+    
+            var marker_0e4cdcb6829f73c4bf15304fb83ca220 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_402efe601a811cfd7fd4d5b6f7111bca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e4cdcb6829f73c4bf15304fb83ca220.setIcon(icon_402efe601a811cfd7fd4d5b6f7111bca);
+        
+    
+        var popup_5de7e5915c9519383dee006d74f5827a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3808b2d209fe85ab3307233e932480d1 = $(`<div id="html_3808b2d209fe85ab3307233e932480d1" style="width: 100.0%; height: 100.0%;">México</div>`)[0];
+                popup_5de7e5915c9519383dee006d74f5827a.setContent(html_3808b2d209fe85ab3307233e932480d1);
+            
+        
+
+        marker_0e4cdcb6829f73c4bf15304fb83ca220.bindPopup(popup_5de7e5915c9519383dee006d74f5827a)
+        ;
+
+        
+    
+    
+            var poly_line_8f9c1ee6c4299307a05f78aa01bb9ba4 = L.polyline(
+                [[4.6533816, -74.0836333], [19.4326296, -99.1331785]],
+                {"bubblingMouseEvents": true, "color": "#2b35a1", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2b35a1", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_8f9c1ee6c4299307a05f78aa01bb9ba4.bindTooltip(
+                `<div>
+                     Colombia para México: 75 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_372580c3583287c39b0e8bf959f037d1 = L.marker(
+                [4.6533816, -74.0836333],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_715ed5ef955fda85b2e899d7ea300702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_372580c3583287c39b0e8bf959f037d1.setIcon(icon_715ed5ef955fda85b2e899d7ea300702);
+        
+    
+        var popup_5248578a7f3c2f76479fc283f3e85a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4ed5e18aa42768710ae4f127fff1fa5 = $(`<div id="html_e4ed5e18aa42768710ae4f127fff1fa5" style="width: 100.0%; height: 100.0%;">Colombia</div>`)[0];
+                popup_5248578a7f3c2f76479fc283f3e85a75.setContent(html_e4ed5e18aa42768710ae4f127fff1fa5);
+            
+        
+
+        marker_372580c3583287c39b0e8bf959f037d1.bindPopup(popup_5248578a7f3c2f76479fc283f3e85a75)
+        ;
+
+        
+    
+    
+            var marker_4f4f7552060d009576d10caf988cc2b1 = L.marker(
+                [25.7741728, -80.19362],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_79486ae85f5a5e94a4a7f6fcd17f4278 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f4f7552060d009576d10caf988cc2b1.setIcon(icon_79486ae85f5a5e94a4a7f6fcd17f4278);
+        
+    
+        var popup_fca6efde2e7e360110e04a8023941116 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f96a1154e6997d49c817bceaa242cc62 = $(`<div id="html_f96a1154e6997d49c817bceaa242cc62" style="width: 100.0%; height: 100.0%;">Miami, USA</div>`)[0];
+                popup_fca6efde2e7e360110e04a8023941116.setContent(html_f96a1154e6997d49c817bceaa242cc62);
+            
+        
+
+        marker_4f4f7552060d009576d10caf988cc2b1.bindPopup(popup_fca6efde2e7e360110e04a8023941116)
+        ;
+
+        
+    
+    
+            var poly_line_cdf252aa88aac08ead8899cf2da30eae = L.polyline(
+                [[4.6533816, -74.0836333], [25.7741728, -80.19362]],
+                {"bubblingMouseEvents": true, "color": "#4e61b4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4e61b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_cdf252aa88aac08ead8899cf2da30eae.bindTooltip(
+                `<div>
+                     Colombia para Miami, USA: 55 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f70c6419eb6729957e061a563eacdfb = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_81ca7532e57dd7095a50874f4337ee12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f70c6419eb6729957e061a563eacdfb.setIcon(icon_81ca7532e57dd7095a50874f4337ee12);
+        
+    
+        var popup_da3b9de95ba66bfedcd5c7ccb9e2cfd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e10c4006ab37f957207a944a47bb9c62 = $(`<div id="html_e10c4006ab37f957207a944a47bb9c62" style="width: 100.0%; height: 100.0%;">México</div>`)[0];
+                popup_da3b9de95ba66bfedcd5c7ccb9e2cfd0.setContent(html_e10c4006ab37f957207a944a47bb9c62);
+            
+        
+
+        marker_2f70c6419eb6729957e061a563eacdfb.bindPopup(popup_da3b9de95ba66bfedcd5c7ccb9e2cfd0)
+        ;
+
+        
+    
+    
+            var marker_1decc504420cdcbf73e60796207fc411 = L.marker(
+                [25.7741728, -80.19362],
+                {}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            var icon_6983a2375b3d03578e90f95fdd75e3df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1decc504420cdcbf73e60796207fc411.setIcon(icon_6983a2375b3d03578e90f95fdd75e3df);
+        
+    
+        var popup_54869d22a6b2b2a461153d715e37285e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16273780a1ac2537cb832a7abe3d2b3 = $(`<div id="html_b16273780a1ac2537cb832a7abe3d2b3" style="width: 100.0%; height: 100.0%;">Miami, USA</div>`)[0];
+                popup_54869d22a6b2b2a461153d715e37285e.setContent(html_b16273780a1ac2537cb832a7abe3d2b3);
+            
+        
+
+        marker_1decc504420cdcbf73e60796207fc411.bindPopup(popup_54869d22a6b2b2a461153d715e37285e)
+        ;
+
+        
+    
+    
+            var poly_line_85099854f6f087bbdab77d07d6e918b4 = L.polyline(
+                [[19.4326296, -99.1331785], [25.7741728, -80.19362]],
+                {"bubblingMouseEvents": true, "color": "#6882c2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#6882c2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dc04554cb676858192b70424519a919d);
+        
+    
+            poly_line_85099854f6f087bbdab77d07d6e918b4.bindTooltip(
+                `<div>
+                     México para Miami, USA: 40 ms
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
